@@ -1,8 +1,8 @@
 # Sway: the heart of the customisation
 
 File: `home/.config/sway/config`. Based on the stock Sway config but rewritten
-into sections, with an **Omarchy-style keymap** (the original is kept in git
-history of the machine as `config.pre-omarchy`).
+into sections, with an **Omarchy-style keymap** (the pre-rewrite version still exists on the machine as
+`~/.config/sway/config.pre-omarchy`, not mirrored here).
 
 ## Look
 - Gruvbox palette: focused border `#fe8019` (orange), unfocused `#3c3836`,
@@ -33,7 +33,7 @@ sticks; dialogs float.
 
 ## Autostart
 polkit-gnome agent, mako, `wl-paste --watch cliphist store` (clipboard history),
-`gnome-keyring-daemon` (secrets for Brave/git), and a systemd user import of the
+`gnome-keyring-daemon` (secret store for Brave passwords), and a systemd user import of the
 Wayland environment so user services can reach the session. Waybar is restarted
 through systemd on every reload (`exec_always`).
 

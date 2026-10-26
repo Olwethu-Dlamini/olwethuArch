@@ -5,7 +5,7 @@ Grouped by job:
 
 - **Base:** `base base-devel linux linux-firmware intel-ucode sudo nano vim man-db man-pages`
 - **Compositor/desktop:** `sway swayidle swaylock waybar wofi wmenu mako foot xorg-xwayland xdg-desktop-portal-wlr xdg-desktop-portal-gtk polkit-gnome gnome-keyring seahorse`
-- **Wayland utilities:** `wl-clipboard cliphist wf-recorder brightnessctl` (plus `grim`/`slurp` used by the screenshot keys; they are present as dependencies, not explicit installs - install them explicitly if they ever disappear)
+- **Wayland utilities:** `wl-clipboard cliphist wf-recorder brightnessctl` `grim slurp` (screenshot keys)
 - **Audio:** `pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber alsa-utils pavucontrol rtkit`
 - **Network:** `networkmanager network-manager-applet tailscale wireguard-tools systemd-resolvconf bluez bluez-utils blueman`
 - **Power:** `power-profiles-daemon`

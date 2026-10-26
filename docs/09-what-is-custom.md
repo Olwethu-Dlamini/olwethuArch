@@ -17,6 +17,5 @@ Stock Arch plus packages is the baseline. These are the pieces that are mine:
 9. **Package philosophy** - 88 explicit packages, no DM/DE (`docs/02`).
 
 ## Open to-dos found during review
-- Make `grim` and `slurp` explicit installs.
 - Consider a display manager or a `.bash_profile` snippet to autostart Sway on tty1.
 - `Thunar` and `mpv` have little or no custom config worth mirroring yet.

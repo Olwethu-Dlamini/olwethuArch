@@ -21,6 +21,7 @@ fzf
 git
 github-cli
 gnome-keyring
+grim
 gvfs
 htop
 intel-gpu-tools
@@ -36,8 +37,8 @@ man-pages
 mpv
 nano
 neovim
-network-manager-applet
 networkmanager
+network-manager-applet
 nodejs
 noto-fonts
 noto-fonts-emoji
@@ -55,6 +56,7 @@ reflector
 ripgrep
 rtkit
 seahorse
+slurp
 sof-firmware
 starship
 sudo

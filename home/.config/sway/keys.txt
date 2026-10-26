@@ -9,7 +9,7 @@ SUPER+Shift+F         File manager
 SUPER+Shift+T         Terminal task viewer (top)
 SUPER+Ctrl+V          Clipboard history
 SUPER+F               Fullscreen
-SUPER+V               Toggle floating
+SUPER+Shift+Space     Toggle floating
 SUPER+J               Toggle split direction
 SUPER+G               Toggle tabbed layout
 SUPER+Arrows          Move focus

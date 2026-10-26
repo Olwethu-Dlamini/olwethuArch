@@ -43,6 +43,5 @@ the internal panel `eDP-1` off/on on lid close/open. Result: close the lid and
 keep working on an external monitor or let background jobs run.
 
 ## Known rough edges
-- `keys.txt` says `SUPER+V` toggles floating, but the config binds
-  `SUPER+Shift+Space`.
+
 - Popup positions assume a 1920px-wide screen (`move absolute position 1452 40`).

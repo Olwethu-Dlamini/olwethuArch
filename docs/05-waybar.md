@@ -16,4 +16,4 @@ Files: `waybar/config.jsonc`, `waybar/style.css`, `systemd/user/waybar.service`.
 - **Evolution:** started as a floating, rounded, spaced bar showing the window
   title (a `.old` variant); simplified into the flat bar to match Omarchy; the
   backlight module was added last.
-- **Caveat:** `toggle.sh` paths in the JSON are absolute (`~/...`).
+- **Paths:** popup commands use `~/.config/waybar/toggle.sh` (Waybar runs them through a shell), so the config has no user-specific paths.

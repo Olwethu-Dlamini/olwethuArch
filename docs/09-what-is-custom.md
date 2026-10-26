@@ -18,4 +18,6 @@ Stock Arch plus packages is the baseline. These are the pieces that are mine:
 
 ## Open to-dos found during review
 - Consider a display manager or a `.bash_profile` snippet to autostart Sway on tty1.
-- `Thunar` and `mpv` have little or no custom config worth mirroring yet.
+- `mpv` has little or no custom config worth mirroring yet.
+- `Thunar`: only the custom "Open Terminal Here" action (`uca.xml`, runs `foot -D %f`). NTFS drives
+  show in its sidebar because `etc/fstab` carries `x-gvfs-show`.

@@ -7,6 +7,10 @@ No framework. Custom parts: 50k/100k history with duplicates erased and
 `EDITOR` and aliased over `vi`/`vim`, fzf key bindings (Ctrl-R/T, Alt-C) using
 `fd` for file listing, and the starship prompt if installed.
 
+## foot terminal
+Copy is Ctrl+Shift+C; paste is Ctrl+Shift+V or Super+V (`[key-bindings]` in `foot.ini`). Super+V
+only works inside foot, and only for text; images paste with plain Ctrl+V in apps that take them.
+
 ## Neovim (`nvim/init.lua`)
 Deliberately **plugin-free**. Relative line numbers, 4-space indent, smart-case
 search, system clipboard via wl-clipboard, persistent undo, `<Space>` leader

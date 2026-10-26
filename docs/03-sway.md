@@ -21,8 +21,8 @@ clickfinger clicks.
 Omarchy-flavoured: `Return` terminal, `Space` launcher, `Escape`/`Alt+Space`
 system menu, `W` close, `Shift+B/F/T` browser/files/top, `Ctrl+V` clipboard
 history, `K` pops up the key cheat-sheet (`keys.txt`), numbers for workspaces,
-`Tab` cycles workspaces on the current output, `Print` for screenshots (region to
-clipboard / full to file / region to file in `~/Pictures/Screenshots`).
+`Tab` cycles workspaces on the current output, `Print` for screenshots (region or full screen, saved in
+`~/Pictures/Screenshots` and copied to the clipboard; Super+Print region to file only).
 Volume and brightness keys use `wpctl` and `brightnessctl` and work while locked
 (`--locked`).
 
@@ -45,3 +45,10 @@ keep working on an external monitor or let background jobs run.
 ## Known rough edges
 
 - Popups use `move position cursor`, so they open where the bar was clicked on any resolution.
+
+## Brave / Google Meet window rules
+- The Meet call popup (title `Meet - ...` without the `- Brave` suffix) floats, sticky, 640x440.
+- Picture-in-picture windows from Brave float and stay on every workspace.
+- Brave's "is sharing your screen" bar does not accept clicks under Wayland, so a rule sends
+  it to the scratchpad (hidden, share keeps running). `Super+Shift+H` toggles it.
+  Possible real fix to try after a meeting: `--ozone-platform=x11` in `brave-flags.conf`.

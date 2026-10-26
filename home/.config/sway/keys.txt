@@ -25,8 +25,9 @@ SUPER+Shift+- / =     Shrink / grow height
 SUPER+Comma           Dismiss notification
 SUPER+Ctrl+L          Lock screen
 SUPER+Shift+C         Reload sway config
-Print                 Screenshot region to clipboard
-Shift+Print           Screenshot full screen to file
+Print                 Screenshot region: saved to file AND copied (image) to clipboard
+Shift+Print           Screenshot full screen: saved to file AND copied to clipboard
 SUPER+Print           Screenshot region to file
 SUPER+LeftMouse       Drag window
 SUPER+RightMouse      Resize window
+SUPER+Shift+H         Show/hide Meet's 'sharing your screen' bar (kept in the scratchpad)

@@ -20,7 +20,7 @@
 |---|---|
 | Super+W | close |
 | Super+F | fullscreen |
-| Super+Shift+Space | toggle floating |
+| Super+Shift+Space | toggle floating (Super+V now pastes in foot) |
 | Super+J | toggle split direction |
 | Super+G | toggle tabbed/split |
 | Super+Arrows / +Shift | focus / move |
@@ -32,5 +32,7 @@ next / previous / back-and-forth; Super+scroll cycles.
 
 ## Hardware keys
 Volume, mic mute, and brightness keys work on the lock screen (`--locked`).
-Print: region to clipboard; Shift+Print: full screen to file; Super+Print:
-region to file (`~/Pictures/Screenshots`).
+Print: region, saved to `~/Pictures/Screenshots` and copied to the clipboard as
+`image/png`; Shift+Print: full screen, same; Super+Print: region to file only.
+Paste a screenshot into a chat or other image-aware app with plain Ctrl+V (not Ctrl+Shift+V).
+Super+Shift+H shows/hides Brave's Meet "sharing your screen" bar.

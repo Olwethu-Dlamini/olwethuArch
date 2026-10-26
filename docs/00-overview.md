@@ -15,8 +15,8 @@
 | Editor | Neovim, zero plugins | Everything built in |
 | Shell | bash + starship + fzf | No framework |
 
-Boot flow: UEFI -> systemd-boot -> `getty@tty1` -> login -> Sway is started from
-the TTY -> `exec` lines in the Sway config start mako, polkit agent, cliphist and
+Boot flow: UEFI -> systemd-boot -> `getty@tty1` -> login -> Sway is launched from
+the TTY by typing `sway` (no display manager is installed) -> `exec` lines in the Sway config start mako, polkit agent, cliphist and
 the Waybar user service.
 
 What is *custom* (as opposed to stock Arch) is documented per area in the

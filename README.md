@@ -19,6 +19,9 @@ wanted on a plain Arch base with Sway, so I understand every file.
 7. [Shell, editor, git](docs/07-shell-and-editor.md)
 8. [Network and power](docs/08-network-and-power.md)
 9. [What is custom + to-dos](docs/09-what-is-custom.md)
+10. [Keybindings](docs/10-keybindings.md)
+11. [Restore guide](docs/11-restore-guide.md)
+12. [Troubleshooting](docs/12-troubleshooting.md)
 
 ## Layout
 - `home/` - files that belong in `$HOME` (`install.sh` deploys them)

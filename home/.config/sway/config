@@ -126,8 +126,8 @@ bindsym $mod+Print exec grim -g "$(slurp)" ~/Pictures/Screenshots/$(date +%F_%H-
 for_window [app_id="org.gnome.FileRoller"] floating enable
 # bar popups: drop down from the top-right, under the bar
 for_window [app_id="wofi"] floating enable, resize set 520 380, move position center, border pixel 2
-for_window [app_id="pavucontrol"] floating enable, resize set 460 340, move absolute position 1452 40
-for_window [app_id="blueman-manager|nm-connection-editor"] floating enable, resize set 460 420, move absolute position 1452 40
+for_window [app_id="pavucontrol"] floating enable, resize set 460 340, move position cursor
+for_window [app_id="blueman-manager|nm-connection-editor"] floating enable, resize set 460 420, move position cursor
 for_window [app_id="firefox" title="Picture-in-Picture"] floating enable, sticky enable
 for_window [window_role="pop-up|dialog"] floating enable
 

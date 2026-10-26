@@ -10,4 +10,4 @@
 - **Boot hangs on a data disk:** fstab entries are `nofail` with a 10s timeout,
   so it should not; check `journalctl -b -u systemd-fsck@*` for a dirty NTFS flag.
 - **Scripts not executable after cloning:** NTFS drops modes; run `install.sh`.
-- **Waybar popups mispositioned:** the Sway rules hard-code x=1452 for 1920px.
+- **Popups open in an odd spot:** they use `move position cursor`; click the bar module again after reloading.

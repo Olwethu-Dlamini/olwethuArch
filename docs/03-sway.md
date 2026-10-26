@@ -44,4 +44,4 @@ keep working on an external monitor or let background jobs run.
 
 ## Known rough edges
 
-- Popup positions assume a 1920px-wide screen (`move absolute position 1452 40`).
+- Popups use `move position cursor`, so they open where the bar was clicked on any resolution.

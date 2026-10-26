@@ -17,10 +17,6 @@ Stock Arch plus packages is the baseline. These are the pieces that are mine:
 9. **Package philosophy** - 88 explicit packages, no DM/DE (`docs/02`).
 
 ## Open to-dos found during review
-- Unify the colour palette (Gruvbox vs Catppuccin).
-- Fix `keys.txt` (`SUPER+V` should read `SUPER+Shift+Space`).
-- Replace absolute `~` paths in `waybar/config.jsonc` with `~`-safe
-  wrappers, and compute popup positions instead of hard-coding 1452.
 - Make `grim` and `slurp` explicit installs.
 - Consider a display manager or a `.bash_profile` snippet to autostart Sway on tty1.
 - `Thunar` and `mpv` have little or no custom config worth mirroring yet.

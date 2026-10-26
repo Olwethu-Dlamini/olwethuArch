@@ -1,0 +1,13 @@
+# Secrets and state that must never be mirrored into this repo
+.ssh/
+.gnupg/
+.kube/
+.config/gh/
+.config/BraveSoftware*/
+.config/mozilla/
+.thunderbird/
+etc/wireguard/
+*.bak
+*.bak-*
+*.old
+*.pre-omarchy

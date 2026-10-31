@@ -12,6 +12,8 @@
    - NTFS lines from `etc/fstab` (UUIDs are specific to my disks)
 5. Enable units from `packages/enabled-units.txt`:
    `sudo systemctl enable --now NetworkManager bluetooth docker tailscaled power-profiles-daemon systemd-timesyncd fstrim.timer paccache.timer reflector.timer`
+   `kit-weekly-push.timer` is a user timer that the omp-by-oll kit's `install.sh` links and enables
+   (Thursday 18:00 push of local commits); it is listed for completeness, not installed from here.
 6. Restore WireGuard config separately into `/etc/wireguard`, then enable `wg-quick@wg0`.
 7. Run `./install.sh`, log in on tty1, type `sway`.
 8. `sudo tailscale up`, `gh auth login`, and set git `user.name`/`user.email`.

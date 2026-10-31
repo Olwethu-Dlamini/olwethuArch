@@ -13,5 +13,6 @@
   installed, `~/.kube` is private.
 - **Power:** `power-profiles-daemon` for profile switching; lid ignored by logind
   and handled by Sway; swayidle locks at 5 min and blanks at 10.
-- **Time/mirrors:** `systemd-timesyncd`, and `reflector.timer` refreshing the five
-  newest HTTPS mirrors.
+- **Time/mirrors:** `systemd-timesyncd`, and `reflector.timer` refreshing the ten
+  fastest HTTPS mirrors from South Africa, Germany and the Netherlands (`--country ZA,DE,NL
+  --latest 10 --sort rate`).

@@ -45,6 +45,7 @@ keep working on an external monitor or let background jobs run.
 ## Known rough edges
 
 - Popups use `move position cursor`, so they open where the bar was clicked on any resolution.
+  pavucontrol is then moved 40px down so it opens below the bar instead of over it.
 
 ## Brave / Google Meet window rules
 - The Meet call popup (title `Meet - ...` without the `- Brave` suffix) floats, sticky, 640x440.

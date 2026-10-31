@@ -11,6 +11,8 @@ No framework. Custom parts: 50k/100k history with duplicates erased and
 ## foot terminal
 Copy is Ctrl+Shift+C; paste is Ctrl+Shift+V or Super+V (`[key-bindings]` in `foot.ini`). Super+V
 only works inside foot, and only for text; images paste with plain Ctrl+V in apps that take them.
+Ctrl+Shift+O shows a letter next to every URL or path on screen; typing it opens that link with
+`xdg-open` (`[url]` in `foot.ini`).
 
 ## Neovim (`nvim/init.lua`)
 Deliberately **plugin-free**. Relative line numbers, 4-space indent, smart-case

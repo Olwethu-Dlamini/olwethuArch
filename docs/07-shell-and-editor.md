@@ -5,7 +5,8 @@ No framework. Custom parts: 50k/100k history with duplicates erased and
 `history -a` after every command (shared across terminals), `autocd`/`cdspell`,
 `~/.local/bin` on PATH (that is where `omp` lives), `nvim` as
 `EDITOR` and aliased over `vi`/`vim`, fzf key bindings (Ctrl-R/T, Alt-C) using
-`fd` for file listing, and the starship prompt if installed.
+`fd` for file listing, the starship prompt if installed, and the .NET SDK
+(`DOTNET_ROOT=~/.dotnet`, `~/.dotnet/tools` on PATH, telemetry opted out).
 
 ## foot terminal
 Copy is Ctrl+Shift+C; paste is Ctrl+Shift+V or Super+V (`[key-bindings]` in `foot.ini`). Super+V

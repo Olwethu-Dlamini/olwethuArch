@@ -36,3 +36,8 @@ fi
 
 # --- prompt (only if starship is installed) ---
 command -v starship >/dev/null && eval "$(starship init bash)"
+
+# .NET SDK (restored from the old oll home, 2026-10-26)
+export DOTNET_ROOT="$HOME/.dotnet"
+export PATH="$PATH:$HOME/.dotnet/tools"
+export DOTNET_CLI_TELEMETRY_OPTOUT=1

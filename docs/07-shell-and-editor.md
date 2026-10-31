@@ -14,6 +14,9 @@ only works inside foot, and only for text; images paste with plain Ctrl+V in app
 Ctrl+Shift+O shows a letter next to every URL or path on screen; typing it opens that link with
 `xdg-open` (`[url]` in `foot.ini`).
 
+## Default apps (`home/.config/mimeapps.list`)
+Thunderbird handles mail links; Kate opens plain text, Markdown, logs and PHP files.
+
 ## Neovim (`nvim/init.lua`)
 Deliberately **plugin-free**. Relative line numbers, 4-space indent, smart-case
 search, system clipboard via wl-clipboard, persistent undo, `<Space>` leader

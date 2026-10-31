@@ -3,9 +3,17 @@ x-scheme-handler/mailto=userapp-Thunderbird-QAFHX3.desktop
 x-scheme-handler/mid=userapp-Thunderbird-QAFHX3.desktop
 message/rfc822=userapp-Thunderbird-QAFHX3.desktop
 x-scheme-handler/net.thunderbird=userapp-Thunderbird-3JYDX3.desktop
+text/markdown=org.kde.kate.desktop
+text/plain=org.kde.kate.desktop
+text/x-markdown=org.kde.kate.desktop
+text/x-log=org.kde.kate.desktop
+application/x-php=org.kde.kate.desktop
 
 [Added Associations]
 x-scheme-handler/mailto=userapp-Thunderbird-QAFHX3.desktop;
 x-scheme-handler/mid=userapp-Thunderbird-QAFHX3.desktop;
 message/rfc822=userapp-Thunderbird-QAFHX3.desktop;
 x-scheme-handler/net.thunderbird=userapp-Thunderbird-3JYDX3.desktop;
+text/markdown=firefox.desktop;nvim.desktop;
+application/x-php=brave-browser.desktop;org.kde.kate.desktop;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=org.kde.kate.desktop;

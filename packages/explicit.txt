@@ -15,6 +15,7 @@ dosfstools
 exfatprogs
 fd
 file-roller
+filezilla
 firefox
 foot
 fzf
@@ -27,6 +28,8 @@ htop
 intel-gpu-tools
 intel-media-driver
 intel-ucode
+jq
+kate
 kubectl
 libva-utils
 linux
@@ -65,8 +68,10 @@ swayidle
 swaylock
 systemd-resolvconf
 tailscale
+telegram-desktop
 thunar
 thunderbird
+tmux
 ttf-dejavu
 ttf-jetbrains-mono
 ttf-jetbrains-mono-nerd
@@ -85,6 +90,7 @@ wofi
 xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr
 xdg-user-dirs
+xdg-utils
 xorg-xwayland
 yay-bin
 yay-bin-debug

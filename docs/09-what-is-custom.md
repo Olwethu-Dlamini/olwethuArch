@@ -14,7 +14,7 @@ Stock Arch plus packages is the baseline. These are the pieces that are mine:
 7. **Networking glue** - wg0 hidden from NetworkManager, resolv.conf backup around
    Tailscale (`docs/08`).
 8. **Plugin-free Neovim, framework-free bash, opinionated gitconfig** (`docs/07`).
-9. **Package philosophy** - 88 explicit packages, no DM/DE (`docs/02`).
+9. **Package philosophy** - 96 explicit packages, no DM/DE (`docs/02`).
 
 ## Open to-dos found during review
 - Consider a display manager or a `.bash_profile` snippet to autostart Sway on tty1.

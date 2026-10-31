@@ -1,6 +1,6 @@
 # Packages: what is installed and why
 
-88 explicitly installed packages (`packages/explicit.txt`), only 3 from the AUR.
+96 explicitly installed packages (`packages/explicit.txt`), only 3 from the AUR.
 Grouped by job:
 
 - **Base:** `base base-devel linux linux-firmware intel-ucode sudo nano vim man-db man-pages`
@@ -9,9 +9,9 @@ Grouped by job:
 - **Audio:** `pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber alsa-utils pavucontrol rtkit`
 - **Network:** `networkmanager network-manager-applet tailscale wireguard-tools systemd-resolvconf bluez bluez-utils blueman`
 - **Power:** `power-profiles-daemon`
-- **Files:** `thunar gvfs file-roller ntfs-3g exfatprogs dosfstools xdg-user-dirs`
-- **Dev:** `git github-cli neovim nodejs npm docker docker-buildx docker-compose kubectl ripgrep fd fzf starship htop`
-- **Apps:** `firefox thunderbird mpv brave-bin` (AUR)
+- **Files:** `thunar gvfs file-roller ntfs-3g exfatprogs dosfstools xdg-user-dirs xdg-utils filezilla`
+- **Dev:** `git github-cli neovim nodejs npm docker docker-buildx docker-compose kubectl ripgrep fd fzf starship htop jq tmux`
+- **Apps:** `firefox thunderbird mpv kate telegram-desktop brave-bin` (AUR)
 - **Fonts:** `ttf-jetbrains-mono ttf-jetbrains-mono-nerd noto-fonts noto-fonts-emoji ttf-dejavu woff2-font-awesome`
 - **Maintenance:** `reflector pacman-contrib yay-bin` (AUR)
 
@@ -19,7 +19,7 @@ Grouped by job:
 
 No display manager, no desktop environment, no GUI settings daemons. Each
 component is a separate small program wired together by the Sway config.
-Thunar, pavucontrol, blueman and nm-connection-editor are the only GUI tools,
+Thunar, pavucontrol, blueman and nm-connection-editor are the only GUI settings tools,
 and the bar opens them on demand.
 
 ## Restore

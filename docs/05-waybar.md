@@ -3,10 +3,11 @@
 Files: `waybar/config.jsonc`, `waybar/style.css`, `systemd/user/waybar.service`.
 
 - **Layout:** app-launcher button, workspaces and sway mode on the left, clock in the centre (tooltip is
-  a calendar, click toggles the long date), then right-aligned: volume, network,
-  bluetooth, CPU, memory, backlight, battery, tray. 28px tall, flat, full width.
-- **Interaction:** scroll on the backlight module changes brightness;
-  right-click on volume mutes; left-click on volume/network/bluetooth opens
+  a calendar, click toggles the long date), then right-aligned: volume, volume slider,
+  network, bluetooth, CPU, memory, backlight, battery, tray. 28px tall, flat, full width.
+- **Interaction:** scroll on the backlight module changes brightness; scroll on volume
+  changes it in 5% steps, or drag the slider (0-100%, a pink fill on a dark trough with
+  the knob hidden); right-click on volume mutes; left-click on volume/network/bluetooth opens
   pavucontrol / nm-connection-editor / blueman-manager via `toggle.sh`; left-click
   on the launcher button runs `sway/launcher.sh`, same as Super+Space, so clicking it
   again closes the launcher.

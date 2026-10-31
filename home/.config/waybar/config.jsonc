@@ -13,6 +13,7 @@
     ],
     "modules-right": [
         "pulseaudio",
+        "pulseaudio/slider",
         "network",
         "bluetooth",
         "cpu",
@@ -49,7 +50,13 @@
         },
         "on-click": "~/.config/waybar/toggle.sh pavucontrol pavucontrol",
         "tooltip": true,
+        "scroll-step": 5,
         "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+    },
+    "pulseaudio/slider": {
+        "min": 0,
+        "max": 100,
+        "orientation": "horizontal"
     },
     "network": {
         "format-wifi": "󰤨 {essid}",

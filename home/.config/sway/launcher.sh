@@ -1,7 +1,21 @@
 #!/usr/bin/env bash
 # App launcher that closes when another window takes focus (click away to dismiss).
-# Pressing the key again while it is open also closes it.
-pkill -x wofi && exit 0
+# Pressing the key (or the bar button) again while it is open on the current workspace closes it.
+# A launcher left open on another workspace or screen is replaced, so the key never just "does nothing".
+
+if pgrep -x wofi >/dev/null; then
+    visible=$(swaymsg -t get_tree | python3 -c '
+import json, sys
+def walk(n):
+    if (n.get("app_id") or "") == "wofi" and n.get("visible"):
+        return True
+    return any(walk(c) for c in n.get("nodes", []) + n.get("floating_nodes", []))
+print("yes" if walk(json.load(sys.stdin)) else "no")')
+    pkill -x wofi
+    sleep 0.2
+    pgrep -x wofi >/dev/null && pkill -9 -x wofi
+    [ "$visible" = "yes" ] && exit 0
+fi
 
 # hovering must not steal focus while the launcher is open, only clicks should
 swaymsg focus_follows_mouse no >/dev/null

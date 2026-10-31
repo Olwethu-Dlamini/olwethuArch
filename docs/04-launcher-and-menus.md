@@ -4,8 +4,11 @@ Three small scripts hold most of the hand-written behaviour.
 
 ## `sway/launcher.sh` - click-away launcher (SUPER+Space)
 wofi has no "close when focus is lost" option, so this wraps it:
-1. If wofi is already running, `pkill` it and exit - so pressing the key again
-   closes the launcher (toggle).
+1. If wofi is already running, check the Sway tree for a *visible* wofi window, then
+   kill wofi (`pkill`, `pkill -9` if it is still alive after 0.2s). If it was visible
+   the script exits, so pressing the key or the bar button again closes the launcher
+   (toggle). If it was open on another workspace or screen it is replaced, so the key
+   never just "does nothing".
 2. Turn `focus_follows_mouse` **off** while open, so hovering cannot steal focus;
    a `trap` restores it on exit however the script ends.
 3. Start `wofi --normal-window --show drun` in the background. `wofi/config` sorts

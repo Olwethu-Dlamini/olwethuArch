@@ -26,4 +26,6 @@ selections, yank highlight.
 ## git (`home/.gitconfig`)
 Rebase on pull, auto-setup upstream on push, histogram diffs with moved-block
 colouring, rerere, verbose commit editor, short aliases (`co br ci st`), and
-GitHub credentials through `gh`. Identity lines are not mirrored.
+GitHub credentials through `gh`. Bitbucket uses the `store` helper with an
+`x-bitbucket-api-token-auth` URL rewrite, so API tokens work as the password; the token file
+itself (`~/.git-credentials`) is not mirrored. Identity lines are not mirrored.

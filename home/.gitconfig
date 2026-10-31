@@ -37,3 +37,7 @@
 [credential "https://gist.github.com"]
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
+[credential "https://bitbucket.org"]
+	helper = store
+[url "https://x-bitbucket-api-token-auth@bitbucket.org/"]
+	insteadOf = https://olwethu3@bitbucket.org/

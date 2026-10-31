@@ -8,7 +8,8 @@ wofi has no "close when focus is lost" option, so this wraps it:
    closes the launcher (toggle).
 2. Turn `focus_follows_mouse` **off** while open, so hovering cannot steal focus;
    a `trap` restores it on exit however the script ends.
-3. Start `wofi --normal-window --show drun` in the background.
+3. Start `wofi --normal-window --show drun` in the background. `wofi/config` sorts
+   entries alphabetically (`sort_order=alphabetical`) instead of by launch count.
 4. Subscribe to Sway window events (`swaymsg -t subscribe -m '["window"]'`),
    keep only `focus` changes that did not land on wofi, and poll them on fd
    `$events` every 0.3s. If another window takes focus, kill wofi.

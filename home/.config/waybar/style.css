@@ -20,3 +20,7 @@ window#waybar { background: #282828; color: #d5c4a1; border-bottom: 1px solid #3
 #battery { color: #b8bb26; }
 
 #backlight { color: #fabd2f; }
+
+/* app launcher button, left of the workspaces */
+#custom-launcher { padding: 0 12px; color: #83a598; font-size: 16px; }
+#custom-launcher:hover { background: #3c3836; color: #ebdbb2; }

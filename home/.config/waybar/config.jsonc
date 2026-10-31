@@ -4,6 +4,7 @@
     "height": 28,
     "spacing": 0,
     "modules-left": [
+        "custom/launcher",
         "sway/workspaces",
         "sway/mode"
     ],
@@ -20,6 +21,12 @@
         "battery",
         "tray"
     ],
+    "custom/launcher": {
+        "format": "",
+        "tooltip": true,
+        "tooltip-format": "Apps (Super+Space)",
+        "on-click": "~/.config/sway/launcher.sh"
+    },
     "sway/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,

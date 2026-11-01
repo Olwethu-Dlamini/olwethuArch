@@ -11,3 +11,5 @@
   `[colors]`) and opens links with Ctrl+Shift+O; Kate is the default text editor; reflector picks
   the 10 fastest ZA/DE/NL mirrors; .NET SDK env in bash; Bitbucket credential setup in gitconfig;
   6 new packages and the kit's weekly push timer listed.
+- 2026-11-01: battery conservation mode back on (charge stops at about 60% instead of 100%); a
+  udev rule turns it on again at every boot because the EC had dropped the setting.

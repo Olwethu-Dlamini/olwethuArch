@@ -9,6 +9,8 @@
    - `etc/systemd/logind.conf.d/lid-ignore.conf`
    - `etc/NetworkManager/conf.d/unmanaged-wg.conf`
    - `etc/xdg/reflector/reflector.conf`
+   - `etc/udev/rules.d/90-ideapad-conservation.rules` (IdeaPad only; NTFS marks it executable,
+     so copy with `sudo install -m 644`)
    - NTFS lines from `etc/fstab` (UUIDs are specific to my disks)
 5. Enable units from `packages/enabled-units.txt`:
    `sudo systemctl enable --now NetworkManager bluetooth docker tailscaled power-profiles-daemon systemd-timesyncd fstrim.timer paccache.timer reflector.timer`

@@ -23,6 +23,7 @@ git
 github-cli
 gnome-keyring
 grim
+gtk-layer-shell
 gvfs
 htop
 intel-gpu-tools
@@ -55,6 +56,8 @@ pipewire-jack
 pipewire-pulse
 polkit-gnome
 power-profiles-daemon
+python-cairo
+python-gobject
 reflector
 ripgrep
 rtkit

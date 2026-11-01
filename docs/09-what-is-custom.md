@@ -7,6 +7,8 @@ Stock Arch plus packages is the baseline. These are the pieces that are mine:
 2. **`launcher.sh`** - toggling, click-away wofi launcher driven by Sway window
    events (`docs/04`).
 3. **`system-menu.sh`** and **`keys.txt`** - power menu and on-screen keymap.
+   **`screensaver.sh`/`screensaver.py`** - "Emelda my lala" with bubbling hearts before the
+   lock, plus a matching still swaylock background (`docs/04`).
 4. **Waybar** - flat bar, per-module colours, scroll-to-dim brightness, run as a
    `Restart=always` user service, with **`toggle.sh`** popups (`docs/05`).
 5. **Lid and battery policy** - logind ignores the lid; Sway disables only the panel. A udev

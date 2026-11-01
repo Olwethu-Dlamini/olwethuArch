@@ -1,0 +1,5 @@
+# Lenovo IdeaPad battery conservation mode: the embedded controller stops charging at about 60%.
+# The EC can lose the setting (firmware update, flat battery), so set it again every time the
+# ideapad_acpi driver binds at boot. Check: cat /sys/class/power_supply/BAT0/charge_types
+# shows [Long_Life] when it is on.
+ACTION=="bind", SUBSYSTEM=="platform", DRIVER=="ideapad_acpi", ATTR{conservation_mode}="1"

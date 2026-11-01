@@ -15,3 +15,9 @@
   `cat /sys/class/power_supply/BAT0/charge_types` (`[Long_Life]` means it is on). To turn it on now,
   run `echo 1 | sudo tee /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode`. If it
   is off after a reboot, check that `/etc/udev/rules.d/90-ideapad-conservation.rules` is installed.
+- **Screen locks at 5 min with no hearts:** the screensaver failed and `screensaver.sh` locked
+  instead. Run `python3 ~/.config/sway/screensaver.py` from a terminal to see the error (it needs
+  `python-gobject`, `python-cairo`, `gtk3`, `gtk-layer-shell`). Press any key to close it.
+- **Hearts never appear after editing the Sway config:** `swayidle` is started with `exec`, so a
+  reload does not restart it. Log out and back in, or `pkill swayidle` and re-run the swayidle
+  line from the config with `swaymsg exec`.

@@ -34,8 +34,10 @@ input type:touchpad {
 }
 
 ### Idle / lock
+# 5 min: hearts screensaver; any input closes it and swaylock takes over (screensaver.sh).
+# Backgrounded with & because swayidle -w waits for every command to finish.
 exec swayidle -w \
-    timeout 300 'swaylock -f' \
+    timeout 300 '~/.config/sway/screensaver.sh &' \
     timeout 600 'swaymsg "output * power off"' \
         resume 'swaymsg "output * power on"' \
     before-sleep 'swaylock -f'

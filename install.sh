@@ -18,7 +18,8 @@ find . -type f | while read -r f; do
 done
 
 # NTFS does not keep the executable bit, so restore it
-chmod +x "$HOME/.config/sway/launcher.sh" "$HOME/.config/sway/system-menu.sh" "$HOME/.config/waybar/toggle.sh"
+chmod +x "$HOME/.config/sway/launcher.sh" "$HOME/.config/sway/system-menu.sh" "$HOME/.config/waybar/toggle.sh" \
+    "$HOME/.config/sway/screensaver.sh" "$HOME/.config/sway/screensaver.py" "$HOME/.config/swaylock/make-image.py"
 
 systemctl --user daemon-reload
 systemctl --user enable waybar.service

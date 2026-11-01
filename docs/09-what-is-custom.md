@@ -9,7 +9,8 @@ Stock Arch plus packages is the baseline. These are the pieces that are mine:
 3. **`system-menu.sh`** and **`keys.txt`** - power menu and on-screen keymap.
 4. **Waybar** - flat bar, per-module colours, scroll-to-dim brightness, run as a
    `Restart=always` user service, with **`toggle.sh`** popups (`docs/05`).
-5. **Lid policy** - logind ignores the lid; Sway disables only the panel.
+5. **Lid and battery policy** - logind ignores the lid; Sway disables only the panel. A udev
+   rule keeps IdeaPad conservation mode (charge stops at about 60%) on across boots (`docs/08`).
 6. **fstab NTFS options** - user-owned, `nofail`, 10s timeout (`docs/01`).
 7. **Networking glue** - wg0 hidden from NetworkManager, resolv.conf backup around
    Tailscale (`docs/08`).

@@ -24,3 +24,5 @@ text-color=ebdbb2
 text-clear-color=8ec07c
 text-ver-color=fe8019
 text-wrong-color=fb4934
+image=~/.config/swaylock/emelda.png
+scaling=fill

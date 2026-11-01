@@ -13,3 +13,6 @@
   6 new packages and the kit's weekly push timer listed.
 - 2026-11-01: battery conservation mode back on (charge stops at about 60% instead of 100%); a
   udev rule turns it on again at every boot because the EC had dropped the setting.
+- 2026-11-01 (later): after 5 min idle an "Emelda my lala" screensaver with bubbling hearts shows;
+  any input swaps it for swaylock, whose background is now the same text and hearts as a still
+  image. The screensaver's Python/GTK libraries are listed in the package file.

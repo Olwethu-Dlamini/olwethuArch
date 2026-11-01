@@ -15,7 +15,10 @@ Touchpad: tap-to-click, natural scroll, disable-while-typing, two-finger scroll,
 clickfinger clicks.
 
 ## Idle and lock (swayidle)
-5 min -> lock; 10 min -> screens off (restored on activity); lock before sleep.
+5 min -> hearts screensaver (`screensaver.sh`, see `docs/04`), and touching anything replaces it
+with swaylock; 10 min -> screens off (restored on activity); lock before sleep. Super+Ctrl+L
+locks straight away without the hearts. The swaylock background is `swaylock/emelda.png`: the
+same text and hearts, still, with the centre left clear for the password ring.
 
 ## Keybindings (`$mod` = Super)
 Omarchy-flavoured: `Return` terminal, `Space` launcher, `Escape`/`Alt+Space`

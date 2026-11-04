@@ -21,3 +21,7 @@
 - **Hearts never appear after editing the Sway config:** `swayidle` is started with `exec`, so a
   reload does not restart it. Log out and back in, or `pkill swayidle` and re-run the swayidle
   line from the config with `swaymsg exec`.
+- **Pictures missing from clipboard history (Super+Ctrl+V):** check the recorder runs with
+  `pgrep -af 'wl-paste --watch cliphist'`; copied pictures show up in `cliphist list` as
+  `[[ binary data ... png ... ]]`. Thumbnails live in `~/.cache/cliphist-thumbs` and can be deleted
+  at any time; the picker decodes them again.

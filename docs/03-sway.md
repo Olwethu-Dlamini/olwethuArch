@@ -23,7 +23,8 @@ same text and hearts, still, with the centre left clear for the password ring.
 ## Keybindings (`$mod` = Super)
 Omarchy-flavoured: `Return` terminal, `Space` launcher, `Escape`/`Alt+Space`
 system menu, `W` close, `Shift+B/F/T` browser/files/top, `Ctrl+V` clipboard
-history, `K` pops up the key cheat-sheet (`keys.txt`), numbers for workspaces,
+history (`clipboard.sh`: newest first, copied pictures shown as thumbnails),
+`K` pops up the key cheat-sheet (`keys.txt`), numbers for workspaces,
 `Tab` cycles workspaces on the current output, `Print` for screenshots (region or full screen, saved in
 `~/Pictures/Screenshots` and copied to the clipboard; Super+Print region to file only).
 Volume and brightness keys use `wpctl` and `brightnessctl` and work while locked

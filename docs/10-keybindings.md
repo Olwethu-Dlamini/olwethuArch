@@ -10,7 +10,7 @@
 | Super+Esc / Super+Alt+Space | system menu |
 | Super+K | key cheat-sheet |
 | Super+Shift+B / F / T | Firefox / Thunar / top in foot |
-| Super+Ctrl+V | clipboard history (cliphist + wofi) |
+| Super+Ctrl+V | clipboard history, newest first, pictures as thumbnails (`clipboard.sh`: cliphist + wofi) |
 | Super+Ctrl+L | lock |
 | Super+Shift+C | reload Sway |
 | Super+, / Super+Shift+, | dismiss one / all notifications |

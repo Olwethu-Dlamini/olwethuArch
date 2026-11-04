@@ -19,7 +19,8 @@ done
 
 # NTFS does not keep the executable bit, so restore it
 chmod +x "$HOME/.config/sway/launcher.sh" "$HOME/.config/sway/system-menu.sh" "$HOME/.config/waybar/toggle.sh" \
-    "$HOME/.config/sway/screensaver.sh" "$HOME/.config/sway/screensaver.py" "$HOME/.config/swaylock/make-image.py"
+    "$HOME/.config/sway/screensaver.sh" "$HOME/.config/sway/screensaver.py" "$HOME/.config/swaylock/make-image.py" \
+    "$HOME/.config/sway/clipboard.sh"
 
 systemctl --user daemon-reload
 systemctl --user enable waybar.service

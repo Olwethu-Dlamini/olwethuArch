@@ -59,7 +59,7 @@ bindsym $mod+w kill
 bindsym $mod+Shift+b exec firefox
 bindsym $mod+Shift+f exec thunar
 bindsym $mod+Shift+t exec $term -e top
-bindsym $mod+Ctrl+v exec cliphist list | wofi --dmenu | cliphist decode | wl-copy
+bindsym $mod+Ctrl+v exec ~/.config/sway/clipboard.sh
 bindsym $mod+Ctrl+l exec swaylock -f
 bindsym $mod+Shift+c reload
 bindsym $mod+comma exec makoctl dismiss

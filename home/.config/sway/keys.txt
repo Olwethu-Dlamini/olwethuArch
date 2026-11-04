@@ -7,7 +7,7 @@ SUPER+W               Close window
 SUPER+Shift+B         Browser
 SUPER+Shift+F         File manager
 SUPER+Shift+T         Terminal task viewer (top)
-SUPER+Ctrl+V          Clipboard history
+SUPER+Ctrl+V          Clipboard history (newest first, pictures shown)
 SUPER+F               Fullscreen
 SUPER+Shift+Space     Toggle floating
 SUPER+J               Toggle split direction

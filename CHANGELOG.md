@@ -16,3 +16,5 @@
 - 2026-11-01 (later): after 5 min idle an "Emelda my lala" screensaver with bubbling hearts shows;
   any input swaps it for swaylock, whose background is now the same text and hearts as a still
   image. The screensaver's Python/GTK libraries are listed in the package file.
+- 2026-11-04: clipboard history (Super+Ctrl+V) shows copied pictures as thumbnails instead of a
+  "binary data" line and lists the newest copy first (it was sorted alphabetically: 1, 10, 100 ...).

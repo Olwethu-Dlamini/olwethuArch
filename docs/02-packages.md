@@ -12,7 +12,7 @@ Grouped by job:
 - **Power:** `power-profiles-daemon`
 - **Files:** `thunar gvfs file-roller ntfs-3g exfatprogs dosfstools xdg-user-dirs xdg-utils filezilla`
 - **Dev:** `git github-cli neovim nodejs npm docker docker-buildx docker-compose kubectl ripgrep fd fzf starship htop jq tmux`
-- **Apps:** `firefox thunderbird mpv kate telegram-desktop brave-bin` (AUR)
+- **Apps:** `firefox thunderbird mpv kate libreoffice-fresh telegram-desktop brave-bin` (AUR)
 - **Fonts:** `ttf-jetbrains-mono ttf-jetbrains-mono-nerd noto-fonts noto-fonts-emoji ttf-dejavu woff2-font-awesome`
 - **Maintenance:** `reflector pacman-contrib yay-bin` (AUR)
 

@@ -47,6 +47,8 @@ exec_always systemctl --user import-environment WAYLAND_DISPLAY SWAYSOCK XDG_CUR
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec mako
 exec wl-paste --watch cliphist store
+# Wi-Fi like on Windows: tray icon lists the networks in range, one click connects (asks for the password once)
+exec nm-applet --indicator
 exec_always systemctl --user restart waybar.service
 
 ### Keybindings (Omarchy-style)
@@ -55,6 +57,8 @@ bindsym $mod+space exec $menu
 bindsym $mod+Alt+space exec ~/.config/sway/system-menu.sh
 bindsym $mod+Escape exec ~/.config/sway/system-menu.sh
 bindsym $mod+k exec wofi --dmenu -p Keys < ~/.config/sway/keys.txt
+# Wi-Fi network list (nmtui): pick a network, type the password, done. Also on the bar's Wi-Fi button.
+bindsym $mod+Shift+n exec ~/.config/waybar/toggle.sh nmtui foot --app-id=nmtui nmtui connect
 bindsym $mod+w kill
 bindsym $mod+Shift+b exec firefox
 bindsym $mod+Shift+f exec thunar
@@ -130,6 +134,7 @@ for_window [app_id="org.gnome.FileRoller"] floating enable
 for_window [app_id="wofi"] floating enable, resize set 520 380, move position center, border pixel 2
 for_window [app_id="pavucontrol"] floating enable, resize set 460 340, move position cursor, move down 40 px
 for_window [app_id="blueman-manager|nm-connection-editor"] floating enable, resize set 460 420, move position cursor
+for_window [app_id="nmtui"] floating enable, resize set 640 480, move position center, border pixel 2
 for_window [app_id="firefox" title="Picture-in-Picture"] floating enable, sticky enable
 # Brave: Meet picture-in-picture and the "is sharing your screen" notice float instead of tiling
 for_window [app_id="brave-browser" title="(?i)picture.in.picture"] floating enable, sticky enable

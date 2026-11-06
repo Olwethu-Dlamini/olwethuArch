@@ -23,3 +23,6 @@
   nm-connection-editor. Sway starts the nm-applet tray icon that lists networks in range, and
   Super+Shift+N opens nmtui. `.xlsx` files open in LibreOffice Calc; `libreoffice-fresh` is
   listed in the package file.
+- 2026-11-06 (later): the bar's own Wi-Fi module is gone (it duplicated the tray icon). The
+  nm-applet tray icon is now the one Wi-Fi control (click lists networks in range); Super+Shift+N
+  still opens nmtui.

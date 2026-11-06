@@ -57,7 +57,7 @@ bindsym $mod+space exec $menu
 bindsym $mod+Alt+space exec ~/.config/sway/system-menu.sh
 bindsym $mod+Escape exec ~/.config/sway/system-menu.sh
 bindsym $mod+k exec wofi --dmenu -p Keys < ~/.config/sway/keys.txt
-# Wi-Fi network list (nmtui): pick a network, type the password, done. Also on the bar's Wi-Fi button.
+# Wi-Fi network list (nmtui): pick a network, type the password, done. The tray icon (nm-applet) does the same with the mouse.
 bindsym $mod+Shift+n exec ~/.config/waybar/toggle.sh nmtui foot --app-id=nmtui nmtui connect
 bindsym $mod+w kill
 bindsym $mod+Shift+b exec firefox

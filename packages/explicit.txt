@@ -32,6 +32,7 @@ intel-ucode
 jq
 kate
 kubectl
+libreoffice-fresh
 libva-utils
 linux
 linux-firmware

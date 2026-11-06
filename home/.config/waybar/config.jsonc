@@ -63,7 +63,8 @@
         "format-ethernet": "󰈀 {ipaddr}",
         "format-disconnected": "󰤭 offline",
         "tooltip-format": "{ifname}  {signalStrength}%",
-        "on-click": "~/.config/waybar/toggle.sh nm-connection-editor nm-connection-editor",
+        "on-click": "~/.config/waybar/toggle.sh nmtui foot --app-id=nmtui nmtui connect",
+        "on-click-right": "~/.config/waybar/toggle.sh nm-connection-editor nm-connection-editor",
         "tooltip": true
     },
     "cpu": {

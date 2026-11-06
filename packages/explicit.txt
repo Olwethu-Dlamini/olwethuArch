@@ -8,6 +8,7 @@ bluez-utils
 brave-bin
 brightnessctl
 cliphist
+curl
 docker
 docker-buildx
 docker-compose

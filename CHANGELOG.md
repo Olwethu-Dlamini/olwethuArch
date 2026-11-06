@@ -18,3 +18,8 @@
   image. The screensaver's Python/GTK libraries are listed in the package file.
 - 2026-11-04: clipboard history (Super+Ctrl+V) shows copied pictures as thumbnails instead of a
   "binary data" line and lists the newest copy first (it was sorted alphabetically: 1, 10, 100 ...).
+- 2026-11-06: sync of 3-6 Nov changes. Waybar shows only the Wi-Fi icon (network name and
+  signal on hover); a click on it opens nmtui in a floating foot window, a right-click
+  nm-connection-editor. Sway starts the nm-applet tray icon that lists networks in range, and
+  Super+Shift+N opens nmtui. `.xlsx` files open in LibreOffice Calc; `libreoffice-fresh` is
+  listed in the package file.

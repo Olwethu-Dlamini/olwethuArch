@@ -19,6 +19,7 @@
         "memory",
         "backlight",
         "battery",
+        "custom/claudebar",
         "tray"
     ],
     "custom/launcher": {
@@ -56,6 +57,14 @@
         "min": 0,
         "max": 100,
         "orientation": "horizontal"
+    },
+    "custom/claudebar": {
+        "exec": "~/.local/bin/claudebar --format '{icon} {session_pct}%'",
+        "return-type": "json",
+        "interval": 300,
+        "signal": 13,
+        "tooltip": true,
+        "on-click": "xdg-open https://claude.ai/settings/usage"
     },
     "cpu": {
         "format": "󰻠 {usage}%",

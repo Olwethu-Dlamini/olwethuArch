@@ -26,3 +26,7 @@
 - 2026-11-06 (later): the bar's own Wi-Fi module is gone (it duplicated the tray icon). The
   nm-applet tray icon is now the one Wi-Fi control (click lists networks in range); Super+Shift+N
   still opens nmtui.
+- 2026-11-06 (later): Claude usage is back on the bar, as on Omarchy: `custom/claudebar` just left
+  of the tray shows the session %, the tooltip the session/weekly/per-model limits, click opens
+  claude.ai/settings/usage. It is `claudebar` 0.10.7 built from source into `~/.local`; `curl`
+  added to the package file.

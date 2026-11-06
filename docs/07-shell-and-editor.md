@@ -15,7 +15,8 @@ Ctrl+Shift+O shows a letter next to every URL or path on screen; typing it opens
 `xdg-open` (`[url]` in `foot.ini`).
 
 ## Default apps (`home/.config/mimeapps.list`)
-Thunderbird handles mail links; Kate opens plain text, Markdown, logs and PHP files.
+Thunderbird handles mail links; Kate opens plain text, Markdown, logs and PHP files;
+LibreOffice Calc opens `.xlsx` spreadsheets.
 
 ## Neovim (`nvim/init.lua`)
 Deliberately **plugin-free**. Relative line numbers, 4-space indent, smart-case

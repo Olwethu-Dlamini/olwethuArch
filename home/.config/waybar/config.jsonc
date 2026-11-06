@@ -59,9 +59,10 @@
         "orientation": "horizontal"
     },
     "network": {
-        "format-wifi": "󰤨 {essid}",
+        "format-wifi": "󰤨",
         "format-ethernet": "󰈀 {ipaddr}",
         "format-disconnected": "󰤭 offline",
+        "tooltip-format-wifi": "{essid}  {signalStrength}%",
         "tooltip-format": "{ifname}  {signalStrength}%",
         "on-click": "~/.config/waybar/toggle.sh nmtui foot --app-id=nmtui nmtui connect",
         "on-click-right": "~/.config/waybar/toggle.sh nm-connection-editor nm-connection-editor",

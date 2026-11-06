@@ -25,3 +25,6 @@
   `pgrep -af 'wl-paste --watch cliphist'`; copied pictures show up in `cliphist list` as
   `[[ binary data ... png ... ]]`. Thumbnails live in `~/.cache/cliphist-thumbs` and can be deleted
   at any time; the picker decodes them again.
+- **Claude usage module shows a pause sign or nothing:** the usage endpoint answered 429 (rate
+  limit; it clears on the next 300 s refresh) or Claude Code is logged out; run `claude` to log in.
+  Run `~/.local/bin/claudebar` by hand to see the error.

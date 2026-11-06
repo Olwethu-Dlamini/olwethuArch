@@ -4,7 +4,7 @@ Files: `waybar/config.jsonc`, `waybar/style.css`, `systemd/user/waybar.service`.
 
 - **Layout:** app-launcher button, workspaces and sway mode on the left, clock in the centre (tooltip is
   a calendar, click toggles the long date), then right-aligned: volume, volume slider,
-  bluetooth, CPU, memory, backlight, battery, tray (Wi-Fi is the nm-applet icon in the tray:
+  bluetooth, CPU, memory, backlight, battery, Claude usage, tray (Wi-Fi is the nm-applet icon in the tray:
   click it to list the networks in range; Super+Shift+N opens `nmtui`). 28px tall, flat, full width.
 - **Interaction:** scroll on the backlight module changes brightness; scroll on volume
   changes it in 5% steps, or drag the slider (0-100%, a pink fill on a dark trough with
@@ -12,6 +12,11 @@ Files: `waybar/config.jsonc`, `waybar/style.css`, `systemd/user/waybar.service`.
   pavucontrol / blueman-manager via `toggle.sh`; left-click
   on the launcher button runs `sway/launcher.sh`, same as Super+Space, so clicking it
   again closes the launcher.
+- **Claude usage (`custom/claudebar`):** the Claude icon and the current session %, from
+  `~/.local/bin/claudebar` (https://github.com/mryll/claudebar, 0.10.7, built from source). The
+  tooltip shows the session, weekly and per-model limits. It refreshes every 300 s, the minimum,
+  because the usage endpoint rate-limits; click opens https://claude.ai/settings/usage. It reads
+  the Claude Code login on the machine, so `claude` must be logged in; it needs `curl` and `jq`.
 - **Colour per module** (Gruvbox): volume pink, bluetooth blue,
   CPU/backlight yellow, memory/battery green, launcher button blue; battery warns yellow <25%,
   red <12%.

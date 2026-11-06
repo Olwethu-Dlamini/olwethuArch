@@ -17,5 +17,9 @@
    `kit-weekly-push.timer` is a user timer that the omp-by-oll kit's `install.sh` links and enables
    (Thursday 18:00 push of local commits); it is listed for completeness, not installed from here.
 6. Restore WireGuard config separately into `/etc/wireguard`, then enable `wg-quick@wg0`.
-7. Run `./install.sh`, log in on tty1, type `sway`.
-8. `sudo tailscale up`, `gh auth login`, and set git `user.name`/`user.email`.
+7. Claude usage on the bar (not a package, `install.sh` does not do it): log in to Claude Code
+   with `claude`, then `git clone https://github.com/mryll/claudebar ~/.local/src/claudebar`,
+   `git -C ~/.local/src/claudebar checkout c187af2` (release 0.10.7) and
+   `make -C ~/.local/src/claudebar install PREFIX=~/.local`.
+8. Run `./install.sh`, log in on tty1, type `sway`.
+9. `sudo tailscale up`, `gh auth login`, and set git `user.name`/`user.email`.

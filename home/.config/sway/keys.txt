@@ -31,3 +31,4 @@ SUPER+Print           Screenshot region to file
 SUPER+LeftMouse       Drag window
 SUPER+RightMouse      Resize window
 SUPER+Shift+H         Show/hide Meet's 'sharing your screen' bar (kept in the scratchpad)
+SUPER+Shift+N         Wi-Fi: list networks in range and connect

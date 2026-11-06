@@ -25,7 +25,7 @@ Reboot, Power off - mapped to `swaylock`, `systemctl`, and `swaymsg`.
 ## `waybar/toggle.sh` - open-or-close popups from the bar
 `toggle.sh <app_id> <command...>`: if a window with that `app_id` exists in the
 Sway tree, kill it; otherwise launch the command detached with `setsid`. Used by
-the volume, network and bluetooth modules so one click opens the mixer and a
+the volume and bluetooth modules so one click opens the mixer and a
 second click closes it. It is the reason those apps get fixed floating rules in
 the Sway config.
 

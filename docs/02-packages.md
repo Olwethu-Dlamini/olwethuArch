@@ -21,7 +21,7 @@ Grouped by job:
 No display manager, no desktop environment, no GUI settings daemons. Each
 component is a separate small program wired together by the Sway config.
 Thunar, pavucontrol, blueman and nm-connection-editor are the only GUI settings tools,
-and the bar opens them on demand.
+and the bar or its tray icons open them on demand.
 
 ## Restore
 

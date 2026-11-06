@@ -2,8 +2,8 @@
 
 - **NetworkManager** manages Wi-Fi/Ethernet. Sway starts `nm-applet --indicator`, a tray
   icon that lists the networks in range (one click connects, the password is asked once);
-  `nmtui` (Super+Shift+N or a click on the bar's Wi-Fi icon) does the same in a floating
-  foot window; `nm-connection-editor` (right-click on the Wi-Fi icon) edits saved connections.
+  `nmtui` (Super+Shift+N) does the same in a floating foot window. The bar has no Wi-Fi
+  module of its own; the tray icon is the one Wi-Fi control.
 - **Tailscale** (`tailscaled.service`) provides the private mesh. It rewrites
   `/etc/resolv.conf`; a `resolv.pre-tailscale-backup.conf` is kept beside it, and
   `systemd-resolvconf` is installed to cooperate.

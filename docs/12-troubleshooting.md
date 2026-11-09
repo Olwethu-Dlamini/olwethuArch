@@ -37,5 +37,5 @@
   changing it, run `sudo fsck.exfat -n /dev/sdX1` (find the name with `lsblk`); to repair, unmount it
   and run `sudo fsck.exfat -y /dev/sdX1`, then copy the file again. Always Eject in Thunar (or
   `udisksctl power-off -b /dev/sdX`) and wait until the stick leaves the side panel before pulling
-  it. When the stick is busy, Thunar's Eject tries `lsof` to name the program holding it; `lsof` is
-  not installed, so the eject just fails (`journalctl | grep 'Error launching lsof'`).
+  it. When an eject finds the stick busy, Thunar runs `lsof` to name the program holding it; `lsof` is
+  not installed, so it cannot say which (`journalctl | grep 'Error launching lsof'`).

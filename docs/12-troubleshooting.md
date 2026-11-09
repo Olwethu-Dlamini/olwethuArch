@@ -28,3 +28,14 @@
 - **Claude usage module shows a pause sign or nothing:** the usage endpoint answered 429 (rate
   limit; it clears on the next 300 s refresh) or Claude Code is logged out; run `claude` to log in.
   Run `~/.local/bin/claudebar` by hand to see the error.
+- **File copied to a USB stick is gone after plugging it back in:** the stick was pulled out without
+  Eject. exFAT writes a file's name and place in the folder separately from its contents, so pulling
+  the stick before that is written loses the file, and every later plug-in logs
+  `exFAT-fs (sdX1): Volume was not properly unmounted. Some data may be corrupt.` Check with
+  `journalctl -k | grep -i exfat`; a pull without Eject shows in `journalctl | grep udisksd` as
+  "device ... no longer exists", a proper Eject as "Powered off /dev/sdX". To check the stick without
+  changing it, run `sudo fsck.exfat -n /dev/sdX1` (find the name with `lsblk`); to repair, unmount it
+  and run `sudo fsck.exfat -y /dev/sdX1`, then copy the file again. Always Eject in Thunar (or
+  `udisksctl power-off -b /dev/sdX`) and wait until the stick leaves the side panel before pulling
+  it. When the stick is busy, Thunar's Eject tries `lsof` to name the program holding it; `lsof` is
+  not installed, so the eject just fails (`journalctl | grep 'Error launching lsof'`).

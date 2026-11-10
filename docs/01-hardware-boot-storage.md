@@ -3,6 +3,11 @@
 - **Machine:** Intel laptop (hostname `<hostname>`) - Intel iGPU (`intel-media-driver`,
   `vulkan-intel`, `intel-gpu-tools`, `libva-utils` for VA-API), `sof-firmware`
   for the audio DSP, `intel-ucode` for microcode. UEFI (Insyde), Secure Boot off.
+- **Memory:** 12 GB DDR4-2667 in two slots, mixed sizes: 4 GB SK Hynix (`ChannelA-DIMM0`) and 8 GB
+  Kingston (`ChannelB-DIMM0`). No swap. Check without root: `udevadm info -e | grep MEMORY_DEVICE`.
+  A whole-laptop out-of-memory kill logs `oom-kill:constraint=CONSTRAINT_NONE` (it has killed
+  Brave); `CONSTRAINT_MEMCG` is a capped build or test hitting its own limit, which is expected:
+  `journalctl -b | grep -o 'oom-kill:constraint=[A-Z_]*' | sort | uniq -c`.
 - **Disks:** 238 GB NVMe holds Linux: `nvme0n1p1` 1 GiB vfat `/boot` (ESP),
   `nvme0n1p2` ext4 `/`. A 931 GB SATA disk holds three NTFS partitions that
   predate Linux (shared with Windows): `Linux` (projects, including this repo),

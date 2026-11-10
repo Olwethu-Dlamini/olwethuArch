@@ -8,9 +8,15 @@ No framework. Custom parts: 50k/100k history with duplicates erased and
 `fd` for file listing, the starship prompt if installed, and the .NET SDK
 (`DOTNET_ROOT=~/.dotnet`, `~/.dotnet/tools` on PATH, telemetry opted out).
 
-## foot terminal
+## kitty terminal (default, `kitty/kitty.conf`)
+Started as `kitty --single-instance`, so every window shares one process. Same font, padding,
+opacity and Gruvbox colours as foot. A click opens a link in the default browser; inside agent CLIs
+(omp, Claude Code), which take over the mouse, hold Shift and click. Ctrl+Shift+E labels every link
+with letters, like foot's Ctrl+Shift+O. Copy is Ctrl+Shift+C; paste is Ctrl+Shift+V or Super+V.
+
+## foot terminal (fallback)
 Copy is Ctrl+Shift+C; paste is Ctrl+Shift+V or Super+V (`[key-bindings]` in `foot.ini`). Super+V
-only works inside foot, and only for text; images paste with plain Ctrl+V in apps that take them.
+only works inside the terminal (kitty or foot), and only for text; images paste with plain Ctrl+V in apps that take them.
 Ctrl+Shift+O shows a letter next to every URL or path on screen; typing it opens that link with
 `xdg-open` (`[url]` in `foot.ini`).
 

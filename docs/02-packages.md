@@ -1,10 +1,10 @@
 # Packages: what is installed and why
 
-99 packages listed in `packages/explicit.txt`, only 3 from the AUR.
+102 packages listed in `packages/explicit.txt`, only 3 from the AUR.
 Grouped by job:
 
 - **Base:** `base base-devel linux linux-firmware intel-ucode sudo nano vim man-db man-pages`
-- **Compositor/desktop:** `sway swayidle swaylock waybar wofi wmenu mako foot xorg-xwayland xdg-desktop-portal-wlr xdg-desktop-portal-gtk polkit-gnome gnome-keyring seahorse`
+- **Compositor/desktop:** `sway swayidle swaylock waybar wofi wmenu mako kitty foot xorg-xwayland xdg-desktop-portal-wlr xdg-desktop-portal-gtk polkit-gnome gnome-keyring seahorse`
 - **Wayland utilities:** `wl-clipboard cliphist wf-recorder brightnessctl` `grim slurp` (screenshot keys)
   `python-gobject python-cairo gtk-layer-shell` (hearts screensaver)
 - **Audio:** `pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber alsa-utils pavucontrol rtkit`

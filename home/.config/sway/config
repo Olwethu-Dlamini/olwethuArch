@@ -1,6 +1,6 @@
 ### Variables
 set $mod Mod4
-set $term foot
+set $term kitty --single-instance
 set $menu ~/.config/sway/launcher.sh
 set $left h
 set $down j
@@ -58,11 +58,11 @@ bindsym $mod+Alt+space exec ~/.config/sway/system-menu.sh
 bindsym $mod+Escape exec ~/.config/sway/system-menu.sh
 bindsym $mod+k exec wofi --dmenu -p Keys < ~/.config/sway/keys.txt
 # Wi-Fi network list (nmtui): pick a network, type the password, done. The tray icon (nm-applet) does the same with the mouse.
-bindsym $mod+Shift+n exec ~/.config/waybar/toggle.sh nmtui foot --app-id=nmtui nmtui connect
+bindsym $mod+Shift+n exec ~/.config/waybar/toggle.sh nmtui kitty --class=nmtui nmtui connect
 bindsym $mod+w kill
 bindsym $mod+Shift+b exec firefox
 bindsym $mod+Shift+f exec thunar
-bindsym $mod+Shift+t exec $term -e top
+bindsym $mod+Shift+t exec $term top
 bindsym $mod+Ctrl+v exec ~/.config/sway/clipboard.sh
 bindsym $mod+Ctrl+l exec swaylock -f
 bindsym $mod+Shift+c reload

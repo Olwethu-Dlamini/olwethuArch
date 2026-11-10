@@ -35,3 +35,8 @@
   kill since the 2026-11-06 18:22 boot (3.5 days), against 3 in the 11 days before (Brave killed on
   28 Oct, 29 Oct and 6 Nov). Every boot in the journal (since 24 Oct) saw the same 12 GB, so the log
   does not show what changed.
+- 2026-11-10 (later): kitty replaces foot as the default terminal, because foot cannot open links
+  with a click. Super+Return, Super+Shift+T, the Super+Shift+N Wi-Fi window and Thunar's "Open
+  Terminal Here" all use kitty, and Super+Return windows share one process to save memory.
+  `kitty.conf` keeps foot's font, padding, opacity, Gruvbox colours and Super+V paste. A click
+  opens a link; inside agent CLIs, Shift+click. foot stays installed as a fallback.

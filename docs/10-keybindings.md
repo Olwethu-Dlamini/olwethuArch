@@ -5,12 +5,12 @@
 ## Apps
 | Keys | Action |
 |---|---|
-| Super+Return | foot terminal |
+| Super+Return | kitty terminal (one shared process for all windows) |
 | Super+Space | launcher (`launcher.sh`) |
 | Super+Esc / Super+Alt+Space | system menu |
 | Super+K | key cheat-sheet |
-| Super+Shift+B / F / T | Firefox / Thunar / top in foot |
-| Super+Shift+N | Wi-Fi network list (`nmtui` in a floating foot window) |
+| Super+Shift+B / F / T | Firefox / Thunar / top in kitty |
+| Super+Shift+N | Wi-Fi network list (`nmtui` in a floating kitty window) |
 | Super+Ctrl+V | clipboard history, newest first, pictures as thumbnails (`clipboard.sh`: cliphist + wofi) |
 | Super+Ctrl+L | lock |
 | Super+Shift+C | reload Sway |
@@ -21,7 +21,7 @@
 |---|---|
 | Super+W | close |
 | Super+F | fullscreen |
-| Super+Shift+Space | toggle floating (Super+V now pastes in foot) |
+| Super+Shift+Space | toggle floating (Super+V now pastes in kitty and foot) |
 | Super+J | toggle split direction |
 | Super+G | toggle tabbed/split |
 | Super+Arrows / +Shift | focus / move |

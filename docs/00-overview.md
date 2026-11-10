@@ -7,7 +7,7 @@
 | Compositor | **Sway** (Wayland, i3-compatible) | Tiling, scriptable, no DE needed |
 | Bar | **Waybar**, run as a systemd *user* service | Survives crashes, restartable |
 | Launcher | **wofi** wrapped in a custom script | Click-away-to-close behaviour |
-| Terminal | **foot** | Fast, native Wayland |
+| Terminal | **kitty** (foot kept as a fallback) | Clickable links, images in agent CLIs |
 | Notifications | **mako** | Tiny Wayland daemon |
 | Lock/idle | **swaylock** + **swayidle** | Standard sway stack |
 | Audio | PipeWire + WirePlumber (`wpctl`) | Modern default |

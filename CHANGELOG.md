@@ -30,3 +30,8 @@
   of the tray shows the session %, the tooltip the session/weekly/per-model limits, click opens
   claude.ai/settings/usage. It is `claudebar` 0.10.7 built from source into `~/.local`; `curl`
   added to the package file.
+- 2026-11-10: memory recorded in the hardware doc (12 GB: 4 GB + 8 GB DDR4-2667, no swap), with how
+  to tell a real out-of-memory crash from a capped build. Measured: no whole-laptop out-of-memory
+  kill since the 2026-11-06 18:22 boot (3.5 days), against 3 in the 11 days before (Brave killed on
+  28 Oct, 29 Oct and 6 Nov). Every boot in the journal (since 24 Oct) saw the same 12 GB, so the log
+  does not show what changed.

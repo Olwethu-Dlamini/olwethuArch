@@ -14,7 +14,8 @@
 - **Containers/k8s:** `docker` (+ buildx, compose) service enabled; `kubectl`
   installed, `~/.kube` is private.
 - **Power:** `power-profiles-daemon` for profile switching; lid ignored by logind
-  and handled by Sway; swayidle locks at 5 min and blanks at 10.
+  and handled by Sway (panel off and `power-saver` while closed, `balanced` when opened);
+  swayidle locks at 5 min and blanks at 10.
 - **Battery:** Lenovo conservation mode keeps the battery at about 60% while on AC, so it
   does not sit at 100% all day. The EC can forget the setting, so
   `etc/udev/rules.d/90-ideapad-conservation.rules` writes `conservation_mode=1` every time

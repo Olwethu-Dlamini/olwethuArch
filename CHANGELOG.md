@@ -44,3 +44,6 @@
   never copied to `/etc`, so conservation mode stayed off. The bar now shows a red "no 60% cap"
   next to the battery whenever conservation mode is off (`custom/battery-cap`, checked every 60 s);
   the tooltip has the command that turns it on.
+- 2026-11-12 (later): closing the lid now also switches the CPU to the `power-saver` profile, so
+  agents left running with the lid shut use less power; opening it sets `balanced` again. The
+  panel still turns off and the laptop keeps running as before.

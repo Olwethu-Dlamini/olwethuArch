@@ -150,6 +150,7 @@ include /etc/sway/config.d/*
 
 exec gnome-keyring-daemon --start --components=secrets
 
-### Lid: turn the panel off but keep the system running (logind ignores the lid switch)
-bindswitch --reload --locked lid:on output eDP-1 disable
-bindswitch --reload --locked lid:off output eDP-1 enable
+### Lid: turn the panel off but keep the system running (logind ignores the lid switch).
+### Closed, the CPU drops to power-saver so agents keep working on less power; opened, back to balanced.
+bindswitch --reload --locked lid:on output eDP-1 disable; exec powerprofilesctl set power-saver
+bindswitch --reload --locked lid:off output eDP-1 enable; exec powerprofilesctl set balanced

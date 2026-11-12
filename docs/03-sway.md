@@ -46,6 +46,9 @@ logind ignores the lid (`etc/systemd/logind.conf.d/lid-ignore.conf`); Sway turns
 the internal panel `eDP-1` off/on on lid close/open. Result: close the lid and
 keep working on an external monitor or let background jobs run.
 
+Closing the lid also runs `powerprofilesctl set power-saver`, so agents and builds left running
+with the lid shut draw less power (slower, cooler CPU); opening it sets `balanced` again.
+
 ## Known rough edges
 
 - Popups use `move position cursor`, so they open where the bar was clicked on any resolution.

@@ -40,3 +40,7 @@
   Terminal Here" all use kitty, and Super+Return windows share one process to save memory.
   `kitty.conf` keeps foot's font, padding, opacity, Gruvbox colours and Super+V paste. A click
   opens a link; inside agent CLIs, Shift+click. foot stays installed as a fallback.
+- 2026-11-12: the battery sat at 100% for days unnoticed: the 1 Nov udev rule was in the repo but
+  never copied to `/etc`, so conservation mode stayed off. The bar now shows a red "no 60% cap"
+  next to the battery whenever conservation mode is off (`custom/battery-cap`, checked every 60 s);
+  the tooltip has the command that turns it on.

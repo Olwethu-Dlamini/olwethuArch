@@ -19,6 +19,7 @@
         "memory",
         "backlight",
         "battery",
+        "custom/battery-cap",
         "custom/claudebar",
         "tray"
     ],
@@ -99,6 +100,11 @@
             "󰁹"
         ],
         "tooltip": true
+    },
+    "custom/battery-cap": {
+        "exec": "~/.config/waybar/battery-cap.sh",
+        "return-type": "json",
+        "interval": 60
     },
     "tray": {
         "spacing": 10

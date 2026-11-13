@@ -51,3 +51,6 @@
   udev rule is now installed in `/etc`, so the battery stops at about 60%.
 - 2026-11-13 (later): right-click on the Arch logo at the left of the bar opens the power menu
   (Lock, Suspend, Reboot, Power off ...), the same menu as Super+Esc; left-click still opens the apps.
+- 2026-11-13 (later): a leaf next to the battery icon on the bar shows that conservation mode (the
+  60% cap) is on. The battery is now `custom/battery` (`waybar/battery.sh`), because the built-in
+  module cannot read `charge_types`; icons, % and the yellow/red low-battery colours are unchanged.

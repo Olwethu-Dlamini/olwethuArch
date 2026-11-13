@@ -18,9 +18,13 @@ Files: `waybar/config.jsonc`, `waybar/style.css`, `systemd/user/waybar.service`.
   tooltip shows the session, weekly and per-model limits. It refreshes every 300 s, the minimum,
   because the usage endpoint rate-limits; click opens https://claude.ai/settings/usage. It reads
   the Claude Code login on the machine, so `claude` must be logged in; it needs `curl` and `jq`.
+- **Battery (`custom/battery`):** `waybar/battery.sh` replaces the built-in battery module,
+  which cannot see `charge_types`. Every 30 s it prints the battery icon (a bolt while charging)
+  and the %, and puts a leaf right after the icon while conservation mode is on (`[Long_Life]`,
+  the 60% cap, `docs/08`). The tooltip shows the % and status, plus a line when the cap is on.
 - **Colour per module** (Gruvbox): volume pink, bluetooth blue,
-  CPU/backlight yellow, memory/battery green, launcher button blue; battery warns yellow <25%,
-  red <12%.
+  CPU/backlight yellow, memory/battery green, launcher button blue; battery warns yellow at 25%
+  or less, red at 12% or less.
 - **Run as a service:** instead of `exec waybar` in Sway, a user unit with
   `Restart=always` keeps it alive. Sway's `exec_always systemctl --user restart
   waybar.service` makes a config reload also reload the bar.

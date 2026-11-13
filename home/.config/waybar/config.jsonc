@@ -18,7 +18,7 @@
         "cpu",
         "memory",
         "backlight",
-        "battery",
+        "custom/battery",
         "custom/claudebar",
         "tray"
     ],
@@ -85,20 +85,10 @@
         "on-scroll-down": "brightnessctl set 5%-",
         "tooltip-format": "Scroll to change brightness"
     },
-    "battery": {
-        "states": {
-            "warning": 25,
-            "critical": 12
-        },
-        "format": "{icon} {capacity}%",
-        "format-charging": "󰂄 {capacity}%",
-        "format-icons": [
-            "󰁺",
-            "󰁼",
-            "󰁾",
-            "󰂀",
-            "󰁹"
-        ],
+    "custom/battery": {
+        "exec": "~/.config/waybar/battery.sh",
+        "return-type": "json",
+        "interval": 30,
         "tooltip": true
     },
     "tray": {

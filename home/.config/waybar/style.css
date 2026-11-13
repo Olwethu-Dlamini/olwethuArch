@@ -6,16 +6,16 @@ window#waybar { background: #282828; color: #d5c4a1; border-bottom: 1px solid #3
 #workspaces button.urgent { color: #fe8019; }
 #mode { color: #fe8019; padding: 0 10px; }
 #clock { color: #ebdbb2; font-weight: bold; }
-#pulseaudio, #bluetooth, #cpu, #memory, #battery, #backlight, #custom-claudebar, #tray { padding: 0 12px; }
+#pulseaudio, #bluetooth, #cpu, #memory, #custom-battery, #backlight, #custom-claudebar, #tray { padding: 0 12px; }
 #pulseaudio.muted { color: #928374; }
-#battery.warning { color: #fabd2f; }
-#battery.critical { color: #fb4934; }
+#custom-battery.warning { color: #fabd2f; }
+#custom-battery.critical { color: #fb4934; }
 #clock { color: #ebdbb2; }
 #pulseaudio { color: #d3869b; }
 #bluetooth { color: #83a598; }
 #cpu { color: #fabd2f; }
 #memory { color: #b8bb26; }
-#battery { color: #b8bb26; }
+#custom-battery { color: #b8bb26; }
 
 #backlight { color: #fabd2f; }
 

@@ -11,7 +11,8 @@ Files: `waybar/config.jsonc`, `waybar/style.css`, `systemd/user/waybar.service`.
   the knob hidden); right-click on volume mutes; left-click on volume/bluetooth opens
   pavucontrol / blueman-manager via `toggle.sh`; left-click
   on the launcher button runs `sway/launcher.sh`, same as Super+Space, so clicking it
-  again closes the launcher.
+  again closes the launcher; right-click on it opens the power menu (`sway/system-menu.sh`,
+  same as Super+Esc) to lock, suspend, reboot or power off.
 - **Claude usage (`custom/claudebar`):** the Claude icon and the current session %, from
   `~/.local/bin/claudebar` (https://github.com/mryll/claudebar, 0.10.7, built from source). The
   tooltip shows the session, weekly and per-model limits. It refreshes every 300 s, the minimum,

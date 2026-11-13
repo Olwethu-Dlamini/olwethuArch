@@ -49,3 +49,5 @@
   panel still turns off and the laptop keeps running as before.
 - 2026-11-13: the bar's red "no 60% cap" warning is gone again; conservation mode is on and its
   udev rule is now installed in `/etc`, so the battery stops at about 60%.
+- 2026-11-13 (later): right-click on the Arch logo at the left of the bar opens the power menu
+  (Lock, Suspend, Reboot, Power off ...), the same menu as Super+Esc; left-click still opens the apps.

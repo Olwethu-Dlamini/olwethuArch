@@ -17,7 +17,7 @@ wofi has no "close when focus is lost" option, so this wraps it:
    keep only `focus` changes that did not land on wofi, and poll them on fd
    `$events` every 0.3s. If another window takes focus, kill wofi.
 
-## `sway/system-menu.sh` - power menu (SUPER+Escape)
+## `sway/system-menu.sh` - power menu (SUPER+Escape, or right-click the Arch logo on the bar)
 A wofi `--dmenu` list: Lock, Suspend, Relaunch bar, Reload sway, Log out,
 Reboot, Power off - mapped to `swaylock`, `systemctl`, and `swaymsg`.
 "Relaunch bar" is a safety hatch if Waybar misbehaves.

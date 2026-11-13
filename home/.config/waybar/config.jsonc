@@ -25,8 +25,9 @@
     "custom/launcher": {
         "format": "",
         "tooltip": true,
-        "tooltip-format": "Apps (Super+Space)",
-        "on-click": "~/.config/sway/launcher.sh"
+        "tooltip-format": "Apps (Super+Space)\nRight-click: power menu (Super+Esc)",
+        "on-click": "~/.config/sway/launcher.sh",
+        "on-click-right": "~/.config/sway/system-menu.sh"
     },
     "sway/workspaces": {
         "disable-scroll": true,

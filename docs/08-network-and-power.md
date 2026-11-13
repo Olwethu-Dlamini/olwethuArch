@@ -22,8 +22,8 @@
   `ideapad_acpi` binds at boot. To check it, run `cat /sys/class/power_supply/BAT0/charge_types`:
   it should show `[Long_Life]`. To charge to 100% for a trip:
   `echo 0 | sudo tee /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode`
-  (it turns back on at the next boot). While it is on, the bar shows a leaf next to the battery
-  icon (`docs/05`).
+  (it turns back on at the next boot). While it is on, the battery on the bar is aqua instead
+  of green (`docs/05`).
 - **Time/mirrors:** `systemd-timesyncd`, and `reflector.timer` refreshing the ten
   fastest HTTPS mirrors from South Africa, Germany and the Netherlands (`--country ZA,DE,NL
   --latest 10 --sort rate`).

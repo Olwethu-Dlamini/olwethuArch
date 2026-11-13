@@ -8,6 +8,8 @@ window#waybar { background: #282828; color: #d5c4a1; border-bottom: 1px solid #3
 #clock { color: #ebdbb2; font-weight: bold; }
 #pulseaudio, #bluetooth, #cpu, #memory, #custom-battery, #backlight, #custom-claudebar, #tray { padding: 0 12px; }
 #pulseaudio.muted { color: #928374; }
+/* aqua while the 60% charge cap is on; the low-battery colours below still win */
+#custom-battery.eco { color: #8ec07c; }
 #custom-battery.warning { color: #fabd2f; }
 #custom-battery.critical { color: #fb4934; }
 #clock { color: #ebdbb2; }

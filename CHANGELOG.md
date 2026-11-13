@@ -54,3 +54,5 @@
 - 2026-11-13 (later): a leaf next to the battery icon on the bar shows that conservation mode (the
   60% cap) is on. The battery is now `custom/battery` (`waybar/battery.sh`), because the built-in
   module cannot read `charge_types`; icons, % and the yellow/red low-battery colours are unchanged.
+- 2026-11-13 (later): the leaf is gone; the battery on the bar turns aqua instead while the 60% cap
+  is on (the low-battery yellow and red still take over).

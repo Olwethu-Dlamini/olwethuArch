@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# Waybar custom/battery: battery icon and %, with a leaf right after the icon while
-# conservation mode (the IdeaPad 60% charge cap) is on. Stands in for the built-in battery
-# module, which cannot see charge_types.
+# Waybar custom/battery: battery icon and %, with the class "eco" while conservation mode
+# (the IdeaPad 60% charge cap) is on, which style.css colours aqua. Stands in for the built-in
+# battery module, which cannot see charge_types.
 b=/sys/class/power_supply/BAT0
 cap=$(<"$b/capacity") status=$(<"$b/status") types=$(<"$b/charge_types")
 
@@ -13,7 +13,6 @@ if ((cap <= 12)); then classes+=(critical); elif ((cap <= 25)); then classes+=(w
 tip="$cap% ($status)"
 
 if [[ $types == *'[Long_Life]'* ]]; then
-    icon+=$'\U000f032a'
     classes+=(eco)
     tip="$tip\nConservation mode on: charging stops at about 60%"
 fi

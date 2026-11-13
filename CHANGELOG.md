@@ -47,3 +47,5 @@
 - 2026-11-12 (later): closing the lid now also switches the CPU to the `power-saver` profile, so
   agents left running with the lid shut use less power; opening it sets `balanced` again. The
   panel still turns off and the laptop keeps running as before.
+- 2026-11-13: the bar's red "no 60% cap" warning is gone again; conservation mode is on and its
+  udev rule is now installed in `/etc`, so the battery stops at about 60%.

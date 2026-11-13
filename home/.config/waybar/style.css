@@ -16,8 +16,6 @@ window#waybar { background: #282828; color: #d5c4a1; border-bottom: 1px solid #3
 #cpu { color: #fabd2f; }
 #memory { color: #b8bb26; }
 #battery { color: #b8bb26; }
-/* shown only when the 60% charge cap is off (battery-cap.sh) */
-#custom-battery-cap { padding: 0 12px 0 0; color: #fb4934; font-weight: bold; }
 
 #backlight { color: #fabd2f; }
 

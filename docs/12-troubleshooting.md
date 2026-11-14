@@ -39,3 +39,14 @@
   `udisksctl power-off -b /dev/sdX`) and wait until the stick leaves the side panel before pulling
   it. When an eject finds the stick busy, Thunar runs `lsof` to name the program holding it; `lsof` is
   not installed, so it cannot say which (`journalctl | grep 'Error launching lsof'`).
+- **Screen stays black and keys don't wake it (2026-11-14):** the panel is on but powered down
+  (`swaymsg -t get_outputs` shows `"power": false`, `/sys/class/backlight/intel_backlight/bl_power`
+  is 4). Turn it on from a terminal, SSH or omp on the phone with
+  `SWAYSOCK=$(ls /run/user/1000/sway-ipc.*.sock) swaymsg 'output * power on'`, then unlock.
+  Closing and opening the lid does **not** help, and can cause it: swayidle's 10-minute
+  `output * power off` is stored for every output, and the lid switch's `output eDP-1 enable`
+  brings the panel back with that stored power-off (reproduced: power off, disable, enable ->
+  `active=true power=false`). On 14 Nov two `swaylock` processes started in the same second
+  (18:49:57; `screensaver.sh` has a check-then-start race), the lid was closed and opened twice
+  (18:50:12-18:50:50), and the panel was found powered off at 18:52; why the key presses did not
+  trigger swayidle's `resume` is not known yet.
